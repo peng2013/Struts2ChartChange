@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  指定Struts 2配置文件的DTD信息  -->
+<!DOCTYPE struts PUBLIC
+      "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+      "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+    <package name="Struts2" extends="struts-default">
+        <action name="product" class="action.ProductAction">
+           <result name="success">/productview.jsp</result>
+        </action>
+        <action name="products" class="action.ProductsAction">
+           <result name="success">/productsview.jsp</result>
+        </action>
+        <action name="products1" class="action.Products1Action">
+             <result name="success">/products1view.jsp</result>
+        </action>
+    </package>
+</struts>
